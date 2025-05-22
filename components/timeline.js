@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function Timeline() {
   const sesi = [
     {
@@ -32,16 +34,49 @@ export default function Timeline() {
     },
   ];
 
+  // Variants untuk section
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.3,
+        duration: 0.7,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  // Variants untuk card
+  const cardVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.7, ease: "easeOut" },
+    },
+  };
+
   return (
-    <section className="py-20 px-6 bg-[#ffffff] text-black text-center">
+    <motion.section
+      id="timeline"
+      className="py-20 px-6 bg-[#ffffff] text-black text-center"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={sectionVariants}
+    >
       <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center justify-center gap-2">
         🕒 Timeline Materi Kelas Privat Online (3 Malam)
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {sesi.map((item, index) => (
-          <div
+          <motion.div
             key={index}
             className="bg-blue-950 p-6 rounded-xl shadow-lg text-left text-white"
+            variants={cardVariants}
           >
             <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
             <p className="font-medium mb-4">{item.subtitle}</p>
@@ -52,18 +87,18 @@ export default function Timeline() {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
       </div>
 
       <div className="mt-10">
         <a
-          href="#daftar"
-          className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold text-lg shadow-lg"
+          href="#kelas"
+          className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-3 rounded-full font-bold text-lg shadow-lg"
         >
           DAFTAR SEKARANG
         </a>
       </div>
-    </section>
+    </motion.section>
   );
 }

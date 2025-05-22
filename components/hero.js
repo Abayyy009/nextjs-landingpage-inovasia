@@ -1,6 +1,9 @@
 export default function Hero() {
   return (
-    <section className="relative h-screen flex justify-center items-center text-center px-4">
+    <section
+      id="home"
+      className="relative h-screen flex justify-center items-center text-center px-4"
+    >
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
@@ -20,10 +23,10 @@ export default function Hero() {
           dipandu oleh mentor berpengalaman.
         </p>
         <a
-          href="#daftar"
-          className="bg-blue-900 hover:bg-blue-950 px-6 py-3 rounded-full font-semibold text-lg"
+          href="#about"
+          className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-3 rounded-full font-semibold text-lg"
         >
-          Daftar Sekarang
+          Pelajari Selengkapnya
         </a>
       </div>
     </section>

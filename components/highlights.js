@@ -1,8 +1,16 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Highlights() {
   return (
-    <section className="py-20 px-6 bg-[#ffffff] text-black">
+    <motion.section
+      id="about"
+      className="py-20 px-6 bg-[#ffffff] text-black"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text Section */}
         <div className="flex-1">
@@ -31,8 +39,8 @@ export default function Highlights() {
             WIB
           </p>
           <a
-            href="#daftar"
-            className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-semibold text-black text-lg border-2 border-black"
+            href="#kelas"
+            className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-3 rounded-full font-semibold  text-lg border-2 border-white"
           >
             DAFTAR SEKARANG
           </a>
@@ -41,7 +49,7 @@ export default function Highlights() {
         {/* Image Section */}
         <div className="flex-1">
           <Image
-            src="/img/ai-coding-vektor.png" // Pastikan file ini ada di folder `public/img/`
+            src="/img/ai-coding-vektor.png"
             alt="Ilustrasi AI Coding"
             width={500}
             height={500}
@@ -49,6 +57,6 @@ export default function Highlights() {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
