@@ -162,7 +162,7 @@ export default function Navbar() {
           </a>
           <a
             onClick={handleClose}
-            href="pages/private.js"
+            href="/private"
             className="block py-2 px-3 hover:bg-blue-100 rounded font-semibold"
           >
             Private 1-on-1
