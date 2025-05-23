@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Link from "next/link";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,9 +9,12 @@ export default function Navbar() {
     <nav className="bg-white text-blue-900 py-4 px-6 sticky top-0 z-50 shadow-md backdrop-blur-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl font-extrabold text-blue-900 tracking-wide">
+        <Link
+          href="/"
+          className="text-2xl font-extrabold text-blue-900 tracking-wide"
+        >
           INOVASIA <span className="text-black"></span>
-        </div>
+        </Link>
 
         {/* Menu Navigation desktop */}
         <div className="hidden md:flex gap-6 items-center">
@@ -56,6 +59,12 @@ export default function Navbar() {
             className="hover:text-blue-900 font-semibold transition-colors"
           >
             Kontak
+          </a>
+          <a
+            href="/private"
+            className="hover:text-blue-900 font-semibold transition-colors"
+          >
+            Private 1-on-1
           </a>
         </div>
 
@@ -150,6 +159,13 @@ export default function Navbar() {
             className="block py-2 px-3 hover:bg-blue-100 rounded font-semibold"
           >
             Kontak
+          </a>
+          <a
+            onClick={handleClose}
+            href="pages/private.js"
+            className="block py-2 px-3 hover:bg-blue-100 rounded font-semibold"
+          >
+            Private 1-on-1
           </a>
           <a
             onClick={handleClose}

@@ -48,7 +48,7 @@ export default function Workshop() {
       viewport={{ once: true, amount: 0.3 }}
       variants={sectionVariants}
     >
-      <h2 className="text-4xl font-bold mb-10">Workshop</h2>
+      <h2 className="text-4xl font-bold mb-10">Kontak</h2>
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10 max-w-6xl mx-auto">
         {/* Google Maps Embed */}
@@ -74,31 +74,50 @@ export default function Workshop() {
           custom="right"
           variants={sideVariants}
         >
-          <div>
-            <h3 className="text-lg font-semibold text-blue-400">Alamat</h3>
-            <p className="leading-relaxed">
-              Ruko Pesona Darussalam Blok A3/1
-              <br />
-              Waringin Jaya, Kecamatan Bojonggede, Kabupaten Bogor, Jawa Barat
-              <br />
-              16920
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-blue-400">📞 Kontak</h3>
-            <p>0853-4633-2626</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-blue-400">📧 Email</h3>
-            <p>course@inovasia.co.id</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-blue-400">Powered By</h3>
-            <img
-              src="/img/powered-by.png"
-              alt="Powered by DKiDS & Inovasia"
-              className="h-12 mt-2"
-            />
+          <div className="text-left w-full lg:w-1/2 space-y-4">
+            <div>
+              <h3 className="text-lg font-semibold text-blue-400">Alamat</h3>
+              <p className="leading-relaxed">
+                Ruko Pesona Darussalam Blok A3/1
+                <br />
+                Waringin Jaya, Kecamatan Bojonggede, Kabupaten Bogor, Jawa Barat
+                <br />
+                16920
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-blue-400">📞 Kontak</h3>
+              <p>0853-4633-2626</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-blue-400">📧 Email</h3>
+              <p>course@inovasia.co.id</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-blue-400">
+                📷 Instagram
+              </h3>
+              <p>
+                <a
+                  href="https://www.instagram.com/inovasia.minicourse/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 underline hover:text-blue-800"
+                >
+                  @inovasia.minicourse
+                </a>
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-blue-400">
+                Powered By
+              </h3>
+              <img
+                src="/img/powered-by.png"
+                alt="Powered by DKiDS & Inovasia"
+                className="h-12 mt-2"
+              />
+            </div>
           </div>
         </motion.div>
       </div>

@@ -82,13 +82,15 @@ export default function Testimoni() {
       </div>
 
       {/* Testimoni Video */}
+      {/* Testimoni Video + Ilustrasi */}
       <motion.div
-        className="max-w-5xl mx-auto"
+        className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7 }}
       >
+        {/* Video Testimoni */}
         <div className="bg-white p-6 rounded-2xl shadow-lg">
           <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg">
             <iframe
@@ -100,6 +102,15 @@ export default function Testimoni() {
               className="absolute top-0 left-0 w-full h-full"
             ></iframe>
           </div>
+        </div>
+
+        {/* Ilustrasi */}
+        <div className="flex justify-center items-center">
+          <img
+            src="/img/testimonial.png" // ganti dengan file ilustrasimu
+            alt="Ilustrasi Testimoni"
+            className="w-full max-w-sm"
+          />
         </div>
       </motion.div>
     </motion.section>

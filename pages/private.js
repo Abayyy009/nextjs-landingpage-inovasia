@@ -1,13 +1,16 @@
 import Head from "next/head";
 import Navbar from "@/components/layout/navbar";
-import Hero from "@/components/home/hero";
-import Highlights from "@/components/home/highlights";
-import Timeline from "@/components/home/timeline";
-import RegistrationForm from "@/components/home/registrationForm";
-import Gallery from "@/components/home/galery";
 import Footer from "@/components/layout/footer";
-import Workshop from "@/components/home/workshop";
+import InovasiaPrivate from "@/components/private/inovasia-private";
+import Hero from "@/components/private/hero";
+import Highlights from "@/components/private/highlights";
+import Timeline from "@/components/private/timeline";
+import PricingSection from "@/components/private/registrationForm";
+import Gallery from "@/components/private/galery";
 import Testimoni from "@/components/home/testimoni";
+import Workshop from "@/components/home/workshop";
+import PrivateClass from "@/components/private/solusi";
+import Navbarprivate from "@/components/layout/navbar-private";
 
 export default function Home() {
   return (
@@ -20,11 +23,12 @@ export default function Home() {
         />
       </Head>
       <main className="bg-[#0f0c29] text-white font-sans">
-        <Navbar />
+        <Navbarprivate />
+        {/* <InovasiaPrivate /> */}
         <Hero />
         <Highlights />
-        <Timeline />
-        <RegistrationForm />
+        <PrivateClass />
+        <PricingSection />
         <Gallery />
         <Testimoni />
         <Workshop />

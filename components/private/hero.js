@@ -15,16 +15,15 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-20 text-white flex flex-col items-center">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">
-          Belajar Coding Mulai dari Nol
+        <h1 className="font-mono text-5xl md:text-6xl font-bold mb-4">
+          Inovasia Mini Course - Private 1-on-1
         </h1>
-        <p className="text-lg md:text-xl mb-6 max-w-2xl">
-          Kelas intensif coding untuk pemula. Materi praktis dan langsung
-          dipandu oleh mentor berpengalaman.
+        <p className="font-mono text-lg md:text-xl mb-6 max-w-2xl">
+          Pendampingan langsung, belajar fokus dan hasil maksimal!
         </p>
         <a
           href="#about"
-          className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-3 rounded-full font-semibold text-lg"
+          className="font-mono bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-3 rounded-full font-semibold text-lg"
         >
           Pelajari Selengkapnya
         </a>
