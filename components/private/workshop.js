@@ -60,7 +60,7 @@ export default function Workshop() {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7928.287725536239!2d106.794552!3d-6.503466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c3257f661999%3A0x674c9939db33174b!2sToko%20ATK%20DKiDS%20Media!5e0!3m2!1sid!2sid!4v1747896864330!5m2!1sid!2sid"
             width="100%"
-            height="350"
+            height="450"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"

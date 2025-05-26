@@ -8,7 +8,7 @@ export default function PricingSection() {
 
   const packages = [
     {
-      name: "Early Bird",
+      name: "Basic",
       price: "Rp 147.000",
       original: "Rp 249.000",
       benefits: ["Akses Zoom Live 3 Hari", "E-Sertifikat"],

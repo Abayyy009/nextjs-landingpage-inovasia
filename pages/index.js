@@ -8,16 +8,13 @@ import Gallery from "@/components/home/galery";
 import Footer from "@/components/layout/footer";
 import Workshop from "@/components/home/workshop";
 import Testimoni from "@/components/home/testimoni";
+import PrivateClass from "@/components/home/solusi";
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Landing Page Inovasia Course</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <main className="bg-[#0f0c29] text-white font-sans">
         <Navbar />
@@ -27,6 +24,7 @@ export default function Home() {
         <RegistrationForm />
         <Gallery />
         <Testimoni />
+        <PrivateClass />
         <Workshop />
         <Footer />
       </main>
